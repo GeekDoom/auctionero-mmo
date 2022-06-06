@@ -1,1 +1,45 @@
-/* You can add global styles to this file, and also import other style files */
+@import "primeflex/primeflex.min.css";
+html,
+body {
+  background-color: var(--surface-b);
+  font-family: var(--font-family);
+  scrollbar-width: thin;
+}
+
+.text-layout-color {
+  color: var(--text-color)
+}
+.p-dropdown-items-wrapper{
+  scrollbar-width: thin;
+}
+.p-datatable-wrapper  {
+  scrollbar-width: thin;
+}
+.p-dialog-content {
+  scrollbar-width: thin;             /* width of the entire scrollbar */
+}
+
+::-webkit-scrollbar  {
+  width: 6px;
+  height: 6px;               /* width of the entire scrollbar */
+}
+::-webkit-scrollbar-track {
+  background: var(--surface-a);        /* color of the tracking area */
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: var(--surface-d);    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 2px solid var(--surface-c); /* border radius/* creates padding around scroll thumb */
+}
+.p-datatable-wrapper::-webkit-scrollbar  {
+  width: 8px;
+  height: 8px;               /* width of the entire scrollbar */
+}
+.p-dropdown-items-wrapper::-webkit-scrollbar  {
+  width: 8px;               /* width of the entire scrollbar */
+}
+.p-dialog-content::-webkit-scrollbar {
+  width: 6px; /* width of the entire scrollbar */
+  height: 8px; /* height of the entire scrollbar */
+}
