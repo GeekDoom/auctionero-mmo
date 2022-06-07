@@ -6,11 +6,13 @@ import { IndexComponent } from './index/index.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 
 import { PrimengModule } from 'src/app/primeng/primeng.module';
+import { AboutComponent } from './about/about.component';
 
 
 @NgModule({
   declarations: [
-    IndexComponent
+    IndexComponent,
+    AboutComponent
   ],
   imports: [
     CommonModule,
