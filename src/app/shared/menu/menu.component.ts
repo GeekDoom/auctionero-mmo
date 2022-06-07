@@ -15,8 +15,12 @@ export class MenuComponent implements OnInit {
   constructor(
     private router: Router,
     private themeService: ThemeService
-  ) { }
-  theme: string = "mdc-dark-indigo";
+  ) {
+    if (localStorage.getItem('Theme') === 'mdc-dark-indigo.css') {
+      this.checked = true
+    }
+  }
+  theme: string = "mdc-light-indigo";
   checked!: boolean;
   items!: MenuItem[];
 
