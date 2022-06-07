@@ -42,7 +42,7 @@ export class MenuComponent implements OnInit {
     ]
   }
 
-
+  //Change Theme
 
   changeTheme(checked: boolean) {
     if (!checked) {
