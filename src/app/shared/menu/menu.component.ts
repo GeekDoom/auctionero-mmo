@@ -30,7 +30,7 @@ export class MenuComponent implements OnInit {
     this.items = [{
       label: 'About',
       icon: 'pi pi-users',
-      routerLink: '/#'
+      routerLink: '/about'
     },
     {
       label: 'Discord',
