@@ -25,18 +25,20 @@ export class MenuComponent implements OnInit {
 
     this.items = [{
       label: 'About',
-      icon: 'pi pi-users'
+      icon: 'pi pi-users',
+      routerLink: '/#'
     },
     {
       label: 'Discord',
-      icon: 'pi pi-discord'
+      icon: 'pi pi-discord',
+      url: 'https://discord.gg/CeRDgf8GMh'
     },
     {
       label: 'Transactions',
       icon: 'pi pi-wallet',
       items: [
-        { label: 'Sell', icon: 'pi pi-dollar' },
-        { label: 'Buy', icon: 'pi pi-shopping-bag' },
+        { label: 'Sell (coming soon)', icon: 'pi pi-dollar' },
+        { label: 'Buy (coming soon)', icon: 'pi pi-shopping-bag' },
       ]
     },
     ]
@@ -46,10 +48,10 @@ export class MenuComponent implements OnInit {
 
   changeTheme(checked: boolean) {
     if (!checked) {
-      this.theme = 'mdc-dark-indigo';
+      this.theme = 'mdc-light-indigo'
       this.themeService.switchTheme(this.theme);
     } else {
-      this.theme = 'mdc-light-indigo'
+      this.theme = 'mdc-dark-indigo';
       this.themeService.switchTheme(this.theme)
 
     }

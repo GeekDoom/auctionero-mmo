@@ -2,6 +2,29 @@
   <!--Menú-->
   <app-menu></app-menu>
   <!--Menú-->
+
+  <!--HERO1-->
+  <div class="grid grid-nogutter surface-section text-800 md:mx-8 md:pr-8 md:pl-8 my-8">
+    <div class="col-12 md:col-6 p-6 text-center md:text-left flex align-items-center ">
+      <section>
+
+        <span class="block text-6xl font-bold mb-1">Join us in our community</span>
+        <div class="text-6xl text-primary font-bold mb-3">There you will find more information</div>
+        <span class="block text-xl md:ml-3 font-light mb-3"><i class="pi pi-discord"></i> Powered by
+          Discord.</span>
+
+        <a href="https://discord.gg/CeRDgf8GMh" pButton pRipple icon="pi pi-discord" label="Join us" type="button"
+          class="mr-3 p-button-raised p-button-lg no-underline" target="_blank"></a>
+      </section>
+    </div>
+    <div class="col-12 md:col-6 overflow-hidden ">
+      <img src="assets/images/WOTLK.jpg" alt="Image" class="md:ml-auto block md:w-full"
+        style="clip-path: polygon(8% 0, 100% 0%, 100% 100%, 0 100%)">
+    </div>
+  </div>
+  <!--HERO1-->
+
+
   <!--Cards-->
   <div class="flex justify-content-evenly flex-wrap">
     <div class=" flex align-items-center  my-6">
@@ -19,8 +42,8 @@
     </div>
     <div class="flex align-items-center  my-6">
       <p-card header="Wow WoTLK Classic" subheader="" [style]="{width: '360px'}" styleClass="p-card-shadow">
-        <ng-template pTemplate="header" >
-          <img alt="Card" src="assets/logo.png" class="w-9 mx-6">
+        <ng-template pTemplate="header">
+          <img alt="Card" src="assets/images/logo.png" class="w-9 mx-6">
         </ng-template>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae
           numquam
@@ -32,7 +55,7 @@
     </div>
     <div class=" flex align-items-center  my-6">
       <p-card header="Coming Soon..." subheader="" [style]="{width: '360px'}" styleClass="p-card-shadow">
-        <ng-template pTemplate="header" >
+        <ng-template pTemplate="header">
           <img alt="Card" src="assets\cs.jpg" class="w-12 center">
         </ng-template>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae
