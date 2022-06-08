@@ -1,9 +1,14 @@
 <p-menubar [model]="items" class=" flex-order-3">
   <ng-template pTemplate="start" class="col">
 
-
+    <a routerLink="/index">
+      <p-image src="assets/images/logo.png" class="mr-6 hidden md:inline-block" alt="Logo" width="50"></p-image>
+    </a>
   </ng-template>
   <ng-template pTemplate="end" class="">
+    <a routerLink="/index">
+      <p-image src="assets/images/logo.png" class="mr-6 inline-block md:hidden" alt="Logo" width="50"></p-image>
+    </a>
 
     <div class="inline-block">
       <div class="col m-auto -mt-5 ml-5">
@@ -15,8 +20,6 @@
         </p-inputSwitch>
       </div>
     </div>
-    <a routerLink="/index">
-      <p-image src="assets/images/logo.png" class="ml-5 inline-block" alt="Logo" width="50"></p-image>
-    </a>
+
   </ng-template>
 </p-menubar>
