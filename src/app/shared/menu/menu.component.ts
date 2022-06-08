@@ -33,6 +33,11 @@ export class MenuComponent implements OnInit {
       routerLink: '/about'
     },
     {
+      label: 'FAQ',
+      icon: 'pi pi-question-circle',
+      routerLink: '/faq'
+    },
+    {
       label: 'Discord',
       icon: 'pi pi-discord',
       url: 'https://discord.gg/CeRDgf8GMh'

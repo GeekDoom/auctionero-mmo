@@ -7,12 +7,14 @@ import { SharedModule } from 'src/app/shared/shared.module';
 
 import { PrimengModule } from 'src/app/primeng/primeng.module';
 import { AboutComponent } from './about/about.component';
+import { FaqComponent } from './faq/faq.component';
 
 
 @NgModule({
   declarations: [
     IndexComponent,
-    AboutComponent
+    AboutComponent,
+    FaqComponent
   ],
   imports: [
     CommonModule,
