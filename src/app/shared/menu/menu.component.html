@@ -1,19 +1,22 @@
-<p-menubar [model]="items">
+<p-menubar [model]="items" class=" flex-order-3">
   <ng-template pTemplate="start" class="col">
-    <a routerLink="/index">
-      <p-image src="assets/images/logo.png" class="mr-5" alt="Logo" width="50"></p-image>
-    </a>
 
 
   </ng-template>
-  <ng-template pTemplate="end">
-    <div class="col m-auto -mt-5 mr-5 ">
-      <h5><i class="pi pi-sun"></i><span class="text-2xl font-light"> /
-        </span><i class="pi pi-moon"></i></h5>
+  <ng-template pTemplate="end" class="">
+
+    <div class="inline-block">
+      <div class="col m-auto -mt-5 ml-5">
+        <h5><i class="pi pi-sun"></i><span class="text-2xl font-light"> /
+          </span><i class="pi pi-moon"></i></h5>
+      </div>
+      <div class="col m-auto -mt-8 ml-5 inline-block">
+        <p-inputSwitch #theme (onChange)="changeTheme(checked)" [(ngModel)]="checked" styleClass=" ml-1">
+        </p-inputSwitch>
+      </div>
     </div>
-    <div class="col m-auto -mt-5">
-      <p-inputSwitch #theme (onChange)="changeTheme(checked)" [(ngModel)]="checked" styleClass=" ml-1">
-      </p-inputSwitch>
-    </div>
+    <a routerLink="/index">
+      <p-image src="assets/images/logo.png" class="ml-5 inline-block" alt="Logo" width="50"></p-image>
+    </a>
   </ng-template>
 </p-menubar>
